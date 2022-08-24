@@ -1,0 +1,48 @@
+<section class="property-binding">
+
+    <!-- <article>
+        <h3>Interpolação</h3>
+        <p> String renderiada com interpolação: {{ url }}</p>
+        <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+        <p>Resultado de 1 + 1 não é: {{ 1 + 1 + getValor() }}</p>
+    </article> -->
+
+    <!-- <article>
+        <img src="{{ urlImagem }}">
+        <img [src]="urlImagem">
+    </article> -->
+
+    <!-- <article>
+        <h3>CSS Binding</h3>
+
+        <select #classe (change)="0">
+            <option value="blue">Success</option>
+            <option value="yellow">Warning</option>
+            <option value="red">Error</option>
+        </select>
+
+        <br><br>
+        <div class="box" [class.blue]="classe.value == 'blue'">Success</div>
+        <div class="box" [class.yellow]="classe.value == 'yellow'">Warning</div>
+        <div class="box" [class.red]="classe.value == 'red'">Error</div>
+
+        <div class="box {{ classe.value }}" >Box</div>
+
+        <div class="box red" [style.display]="classe.value == 'red' ? 'flex' : 'none'">Error</div>
+
+    </article> -->
+
+</section>
+
+<section class="event-binding">
+    <h3>Event Binding</h3>
+    <div>
+        <button (click)="cliqueBotao()" class="btn btn-primary">Clique</button>
+    </div>
+
+    <h3>Two-way Data Binding</h3>
+    <p>meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos.</p>
+    <input type="text" [(ngModel)]="pessoa.nome">
+    <input type="text" [(ngModel)]="pessoa.idade">
+
+</section>

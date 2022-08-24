@@ -1,0 +1,12 @@
+.box{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+}
+
+.yellow{border-color: yellow;}
+.red{border-color: red;}
+.blue{border-color: blue;}
