@@ -1,0 +1,22 @@
+<p>ng-switch</p>
+<nav>
+<a class="aba-item" 
+[class.active]="aba == 'item-1'"
+(click)="aba = 'item-1'"
+>Item 1</a>
+<a class="aba-item" 
+[class.active]="aba == 'item-2'"
+(click)="aba = 'item-2'"
+>Item 2</a>
+<a class="aba-item" 
+[class.active]="aba == 'item-3'"
+(click)="aba = 'item-3'"
+>Item 3</a>
+</nav>
+
+<div class="container" [ngSwitch]="aba">
+    <p *ngSwitchCase="'item-1'">Item 1 - Lorem ipsum dolor sit, amet consectetur.</p>
+    <p *ngSwitchCase="'item-2'">Item 2 - Lorem ipsum dolor sit, amet consectetur.</p>
+    <p *ngSwitchCase="'item-3'">Item 3 - Lorem ipsum dolor sit, amet consectetur.</p>
+    <p *ngSwitchDefault>Dolor sit, amet consectetur.</p>
+</div>

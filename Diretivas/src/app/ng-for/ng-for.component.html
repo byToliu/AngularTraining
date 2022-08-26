@@ -1,0 +1,9 @@
+<p>ng-for</p>
+
+<ul>
+    <li *ngFor="let verdura of verduras">{{ verdura }}</li>
+</ul>
+
+<ul>
+    <li *ngFor="let verdura of verduras, let i = index">{{ i + 1}} - {{ verdura }}</li>
+</ul>
