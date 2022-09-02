@@ -1,0 +1,14 @@
+<menu>
+    <button class="menu__btn btn-historico"
+            (click)="btnSelected = 'historico'"
+            [ngClass]="{'menu__btn--selected': btnSelected == 'historico' }">
+    </button>
+    <button class="menu__btn btn-home" 
+            (click)="btnSelected = 'home'"
+            [ngClass]="{'menu__btn--selected': btnSelected == 'home'}">
+    </button>
+    <button class="menu__btn btn-config" 
+            (click)="btnSelected = 'config'"
+            [ngClass]="{'menu__btn--selected': btnSelected == 'config'}">
+    </button>
+</menu>

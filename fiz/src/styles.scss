@@ -1,5 +1,13 @@
 @import './app/registros/registros.component.scss';
+@import './app/shared/menu-nav/menu-nav.component.scss';
 
+:root{
+    --white: #fff;
+    --black: #000;
+    --primary: rgb(62 57 80);
+    --secondary: #e3e;
+    --bg: #DDDDDD;
+}
 
 *{
     margin: 0;

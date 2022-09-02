@@ -6,7 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegistrosComponent } from './registros/registros.component';
 import { LoginComponent } from './login/login.component';
-import { HistoricoComponent } from './historico/historico.component';
+import { MenuNavComponent } from './shared/menu-nav/menu-nav.component';
+import { HistoricoGeralComponent } from './historico-geral/historico-geral.component';
+import { HistoricoRegistroComponent } from './shared/historico-registro/historico-registro.component';
 
 
 
@@ -16,7 +18,9 @@ import { HistoricoComponent } from './historico/historico.component';
     AppComponent,
     RegistrosComponent,
     LoginComponent,
-    HistoricoComponent,
+    MenuNavComponent,
+    HistoricoGeralComponent,
+    HistoricoRegistroComponent,
 
     
   ],

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HistoricoComponent } from './historico.component';
+import { MenuNavComponent } from './menu-nav.component';
 
-describe('HistoricoComponent', () => {
-  let component: HistoricoComponent;
-  let fixture: ComponentFixture<HistoricoComponent>;
+describe('MenuNavComponent', () => {
+  let component: MenuNavComponent;
+  let fixture: ComponentFixture<MenuNavComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HistoricoComponent ]
+      declarations: [ MenuNavComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HistoricoComponent);
+    fixture = TestBed.createComponent(MenuNavComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
