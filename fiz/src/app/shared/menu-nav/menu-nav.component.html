@@ -1,13 +1,16 @@
 <menu>
     <button class="menu__btn btn-historico"
+            routerLink="historico"
             (click)="btnSelected = 'historico'"
             [ngClass]="{'menu__btn--selected': btnSelected == 'historico' }">
     </button>
     <button class="menu__btn btn-home" 
+            routerLink=""
             (click)="btnSelected = 'home'"
             [ngClass]="{'menu__btn--selected': btnSelected == 'home'}">
     </button>
     <button class="menu__btn btn-config" 
+            routerLink="config"
             (click)="btnSelected = 'config'"
             [ngClass]="{'menu__btn--selected': btnSelected == 'config'}">
     </button>

@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { MenuNavComponent } from './shared/menu-nav/menu-nav.component';
 import { HistoricoGeralComponent } from './historico-geral/historico-geral.component';
 import { HistoricoRegistroComponent } from './shared/historico-registro/historico-registro.component';
+import { UserConfigComponent } from './user-config/user-config.component';
 
 
 
@@ -21,6 +22,7 @@ import { HistoricoRegistroComponent } from './shared/historico-registro/historic
     MenuNavComponent,
     HistoricoGeralComponent,
     HistoricoRegistroComponent,
+    UserConfigComponent,
 
     
   ],

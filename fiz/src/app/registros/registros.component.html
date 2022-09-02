@@ -1,10 +1,12 @@
 <div class="c-registros">
 
-<!-- <h1>Fiz isso?</h1> -->
-<button class="btn-novo-registro">Criar registro</button>
+<header>
+    <button class="btn-novo-registro">Criar registro</button>
 
-<p>Meus registros:</p>
+<!-- <p>Meus registros:</p> -->
+</header>
 
+<main>
 <section id="{{ registro.id }}" 
          class="c-registro" 
          *ngFor="let registro of registros" 
@@ -35,4 +37,5 @@
     <button class="btn-registro__historico">ver histórico</button>
     
 </section>
+</main>
 </div>
