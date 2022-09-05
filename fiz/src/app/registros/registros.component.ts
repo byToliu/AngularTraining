@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./registros.component.scss']
 })
 export class RegistrosComponent implements OnInit {
+  
+
+  criarRegistro: boolean = false;
 
   registros: any;
 
@@ -19,7 +22,14 @@ export class RegistrosComponent implements OnInit {
   ngOnInit(): void {
 
     this.registros = this.registrosService.registros;
+    // this.openCriarRegistro = this.registrosService.criarRegistro;
 
   }
 
+  closeCriarRegistro(){
+    this.criarRegistro = true
+    console.log("mudou");
+    
+    
+  }
 }

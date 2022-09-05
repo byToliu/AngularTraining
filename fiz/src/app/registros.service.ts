@@ -36,7 +36,7 @@ export class RegistrosService {
         cor: "blue",
         data: new Date(2003, 9, 10),
         frequencia: "diaria",
-        status: "created",
+        status: "check",
         selected: false,
         complete: false
       },

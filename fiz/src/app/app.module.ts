@@ -10,7 +10,8 @@ import { MenuNavComponent } from './shared/menu-nav/menu-nav.component';
 import { HistoricoGeralComponent } from './historico-geral/historico-geral.component';
 import { HistoricoRegistroComponent } from './shared/historico-registro/historico-registro.component';
 import { UserConfigComponent } from './user-config/user-config.component';
-
+import { CriarRegistroComponent } from './shared/criar-registro/criar-registro.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -23,12 +24,14 @@ import { UserConfigComponent } from './user-config/user-config.component';
     HistoricoGeralComponent,
     HistoricoRegistroComponent,
     UserConfigComponent,
+    CriarRegistroComponent,
 
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [RegistrosService],
   bootstrap: [AppComponent]
