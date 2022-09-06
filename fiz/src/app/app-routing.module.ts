@@ -1,3 +1,4 @@
+import { HistoricoRegistroComponent } from './shared/historico-registro/historico-registro.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HistoricoGeralComponent } from './historico-geral/historico-geral.component';
@@ -9,7 +10,8 @@ const routes: Routes = [
   { path: '', component: RegistrosComponent},
   { path: 'historico', component: HistoricoGeralComponent},
   { path: 'config', component: UserConfigComponent},
-  { path: 'criar', component: CriarRegistroComponent}
+  { path: 'criar', component: CriarRegistroComponent},
+  { path: 'registro/:id', component: HistoricoRegistroComponent}
 ];
 
 @NgModule({

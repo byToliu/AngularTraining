@@ -11,11 +11,16 @@ export class CriarRegistroComponent implements OnInit {
 
   registros: any;
 
+  newDate: any = new Date;
+  // newDay = this.newDate.getDay();
+  // newYear = this.newDate.getFullYear();
+  // newMonth = this.newDate.getMonth();
+
   btnCorSelected: string = '';
 
   registrosSet: any = {
-    colors: ['yellow', 'pink', 'blue'],
-    icons: ['light', 'cat', 'pill'],
+    colors: ['yellow', 'pink', 'blue', 'green', 'red'],
+    icons: ['check', 'light', 'cat', 'pill', 'bag', 'money', 'tshirt', 'user', 'dialog', 'plus-cicle', 'desktop', 'mobile', 'calendar', 'document', 'charge'],
     frequencia: ['uma vez', 'diaria', 'semanal', 'mensal']
   }
   
@@ -23,9 +28,9 @@ export class CriarRegistroComponent implements OnInit {
     
       id: 0,
       titulo: "",
-      icone: "light",
+      icone: "check",
       cor: "yellow",
-      data: new Date(2003, 9, 10),
+      data: this.newDate,
       frequencia: "diaria",
       status: "created",
       selected: false,
@@ -42,7 +47,6 @@ export class CriarRegistroComponent implements OnInit {
 
   createRegistro(){
 
-   
     this.novoRegistro.id = this.registros.length;
     
 

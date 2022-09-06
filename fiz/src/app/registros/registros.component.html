@@ -6,12 +6,9 @@
 
 <main>
     <!-- style="animation-delay: 0.{{  registro.id }}s;" -->
-<section 
-        
-
+<section #idRegistro 
          id="{{ registro.id }}"
          class="c-registro" 
-         
          *ngFor="let registro of registros" 
          [ngClass]="{
                     checked: registro.status === 'check',
@@ -42,10 +39,10 @@
                     Vish...
 
             </button>
-            <span *ngIf="registro.status != 'created'">Próximo em: {{ registro.data | date: 'dd-MM-yyyy' }}</span>
+            <span *ngIf="registro.status != 'created'">Próximo: {{ registro.data | date: 'dd-MM-yyyy' }}</span>
         </div>
     </div>
-    <button class="btn-registro__historico">ver histórico</button>
+    <button class="btn-registro__historico" [routerLink]="['registro', idRegistro.id]" routerLinkActive="router-link-active" >ver histórico</button>
     
 </section>
 </main>

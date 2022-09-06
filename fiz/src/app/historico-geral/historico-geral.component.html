@@ -1,1 +1,9 @@
-<p>historico-geral works!</p>
+<h2>Historico geral</h2>
+
+<div *ngFor="let historico of historicoGeral">
+        <p>{{ historico.titulo }}</p>
+        <p>{{ historico.data }}</p>
+        <p>{{ historico.horario }}</p>
+        <p>{{ historico.status }}</p>
+        <br>
+</div>

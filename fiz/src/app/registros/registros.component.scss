@@ -46,7 +46,7 @@
     box-shadow: 0px 9px 25px -11px #00000040;
     transition: .6s;
     -webkit-tap-highlight-color: transparent;
-    animation: btnSlideUp 0.4s both;
+    animation: scaleIn 0.4s both;
     
 
     @media screen and (min-width: 768px) {
@@ -151,6 +151,7 @@
             border-radius: 100px;
             border: 2px solid rgb(199, 199, 199);
             color: var(--primary);
+           
         }
     }
     @mixin btnRegistro($cor) {
@@ -162,7 +163,7 @@
         font-weight: 700;
         background-color: $cor;
         transition: .6s;
-        animation: btnSlideUp 0.4s both;
+        animation: scaleIn 0.4s both;
         
     }
 
@@ -186,6 +187,15 @@
     }
 }
 
+@keyframes scaleIn {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);}
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 
 
 .btn-novo-registro{
@@ -246,4 +256,12 @@
 
 .pink{
     background-color: rgb(255, 161, 208);
+}
+
+.green{
+    background-color: rgb(160, 252, 172);
+}
+
+.red{
+    background-color: rgb(255, 169, 169);
 }

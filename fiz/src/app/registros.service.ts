@@ -16,7 +16,25 @@ export class RegistrosService {
         frequencia: "diaria",
         status: "created",
         selected: false,
-        complete: false
+        complete: false,
+        historico: [
+          {
+            data: "10-10-2022",
+            horario: "9h00",
+            status: "checked",
+          },
+          {
+            data: "11-10-2022",
+            horario: "9h02",
+            status: "checked",
+          },
+          {
+            data: "12-10-2022",
+            horario: "9h01",
+            status: "checked",
+          }
+        ]
+
       },
       {
         id: 1,
@@ -27,7 +45,8 @@ export class RegistrosService {
         frequencia: "diaria",
         status: "created",
         selected: false,
-        complete: true
+        complete: true,
+        historico: []
       },
       {
         id: 2,
@@ -38,7 +57,24 @@ export class RegistrosService {
         frequencia: "diaria",
         status: "check",
         selected: false,
-        complete: false
+        complete: false,
+        historico: [
+          {
+            data: "10-10-2022",
+            horario: "9h00",
+            status: "checked",
+          },
+          {
+            data: "11-10-2022",
+            horario: "9h02",
+            status: "checked",
+          },
+          {
+            data: "12-10-2022",
+            horario: "9h01",
+            status: "checked",
+          }
+        ]
       },
       {
         id: 3,
@@ -49,9 +85,49 @@ export class RegistrosService {
         frequencia: "diaria",
         status: "created",
         selected: false,
-        complete: false
+        complete: false,
+        historico: [
+          {
+            data: "10-10-2022",
+            horario: "9h00",
+            status: "checked",
+          },
+          {
+            data: "11-10-2022",
+            horario: "9h02",
+            status: "checked",
+          },
+          {
+            data: "12-10-2022",
+            horario: "9h01",
+            status: "checked",
+          }
+        ]
       }
     ]
+
+
+    historicoGeral = [
+      
+      {
+        titulo: "Apagar as luzes",
+        data: "12-10-2022",
+        horario: "9h01",
+        status: "checked",
+      },
+      {
+        titulo: "Apagar as luzes",
+        data: "12-10-2022",
+        horario: "9h01",
+        status: "checked",
+      },
+      {
+        titulo: "Apagar as luzes",
+        data: "12-10-2022",
+        horario: "9h01",
+        status: "checked",
+      }
+  ]
   
 
   
