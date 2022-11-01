@@ -1,0 +1,12 @@
+<p>listagem works!</p>
+<ul *ngIf="pets$ | async; else loading">
+    <li *ngFor="let pet of pets$ | async">
+        <p>ID: {{ pet.id }}</p>
+        <p>Nome: {{ pet.nome }}</p>
+        <p>Espécie: {{ pet.especie }}</p>
+    </li>
+</ul>
+
+<ng-template #loading>
+    <h4 >Carregando</h4>
+</ng-template>
